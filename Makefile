@@ -9,7 +9,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror 
 MLX =  -lmlx -L/usr/lib -lX11 -lXext -lm
 
-LIBFT_DIR = ./mandatory/libft
+LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
 SRCS =  mandatory/get_next_line/get_next_line.c \

@@ -6,11 +6,11 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:46:36 by nait-bou          #+#    #+#             */
-/*   Updated: 2025/01/30 18:24:37 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/30 19:45:17 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Includes/cub3d_bonus.h"
+#include "../../includes/cub3d_bonus.h"
 
 int	calculate_intersection(float angle, float *intersection,
 		float *step, int is_horizontal)

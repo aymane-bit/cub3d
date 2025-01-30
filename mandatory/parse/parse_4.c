@@ -6,11 +6,11 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 21:18:07 by akajjou           #+#    #+#             */
-/*   Updated: 2025/01/30 18:29:48 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/30 19:44:52 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Includes/cub3d.h"
+#include "../../includes/cub3d.h"
 
 bool	color_parse(t_data *data)
 {

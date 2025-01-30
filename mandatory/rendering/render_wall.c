@@ -6,11 +6,11 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 14:03:25 by nait-bou          #+#    #+#             */
-/*   Updated: 2025/01/30 18:29:48 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/30 19:44:52 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Includes/cub3d.h"
+#include "../../includes/cub3d.h"
 
 void	my_mlx_pixel_put(t_global *global, int x, int y, int color)
 {

@@ -6,11 +6,11 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 14:23:38 by nait-bou          #+#    #+#             */
-/*   Updated: 2025/01/29 01:33:22 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/30 19:45:28 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Includes/cub3d.h"
+#include "../includes/cub3d.h"
 
 int	main(int ac, char **av)
 {

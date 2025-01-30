@@ -6,11 +6,11 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 12:18:15 by nait-bou          #+#    #+#             */
-/*   Updated: 2025/01/30 18:24:37 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/30 19:45:17 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Includes/cub3d_bonus.h"
+#include "../../includes/cub3d_bonus.h"
 
 void	mouve_player(t_global *global, double move_x, double move_y)
 {

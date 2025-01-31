@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 21:18:01 by akajjou           #+#    #+#             */
-/*   Updated: 2025/01/30 19:45:17 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/30 23:25:51 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,9 @@ void	player_view(t_data *data, char **map)
 			if (player_char(map[v_index][c_index]) == true)
 			{
 				if (map[v_index][c_index] == 'N')
-					data->angle = M_PI / 2;
-				if (map[v_index][c_index] == 'S')
 					data->angle = (3 * M_PI) / 2;
+				if (map[v_index][c_index] == 'S')
+					data->angle = M_PI / 2;
 				if (map[v_index][c_index] == 'W')
 					data->angle = 2 * M_PI;
 				if (map[v_index][c_index] == 'E')

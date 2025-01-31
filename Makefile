@@ -2,8 +2,8 @@
 #                                   VARIABLES                                  #
 # **************************************************************************** #
 
-NAME = cub3d
-BONUS_NAME = cub3d_bonus
+NAME = cub3D
+BONUS_NAME = cub3D_bonus
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror 
@@ -12,8 +12,8 @@ MLX =  -lmlx -L/usr/lib -lX11 -lXext -lm
 LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
-SRCS =  mandatory/get_next_line/get_next_line.c \
-		mandatory/get_next_line/get_next_line_utils.c \
+SRCS =  get_next_line/get_next_line.c \
+		get_next_line/get_next_line_utils.c \
 		mandatory/gar_co/gar_co.c \
 		mandatory/main.c \
 		mandatory/error/error.c \
@@ -31,8 +31,8 @@ SRCS =  mandatory/get_next_line/get_next_line.c \
 		mandatory/parse/parse_6.c \
 		mandatory/parse/parse_7.c
 
-BONUS_SRCS =  bonus/get_next_line/get_next_line.c \
-		bonus/get_next_line/get_next_line_utils.c \
+BONUS_SRCS =  get_next_line/get_next_line.c \
+		get_next_line/get_next_line_utils.c \
 		bonus/gar_co/gar_co_bonus.c \
 		bonus/main_bonus.c \
 		bonus/error/error_bonus.c \

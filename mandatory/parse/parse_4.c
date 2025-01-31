@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 21:18:07 by akajjou           #+#    #+#             */
-/*   Updated: 2025/01/30 19:44:52 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:36:46 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ bool	is_white_space(char *line)
 	i = 0;
 	while (line[i])
 	{
-		if (line[i] != ' ')
+		if (line[i] != ' ' && line[i] != '\t')
 			return (false);
 		i++;
 	}
@@ -63,7 +63,7 @@ bool	map_end(char *line)
 {
 	char	**line_splite;
 
-	line_splite = ft_split(line, ' ');
+	line_splite = ft_split(ft_no_tab(line), ' ');
 	if (!ft_strcmp(line_splite[0], "F") || !ft_strcmp(line_splite[0], "C")
 		|| !ft_strcmp(line_splite[0], "SO") || !ft_strcmp(line_splite[0], "NO")
 		|| !ft_strcmp(line_splite[0], "WE") || !ft_strcmp(line_splite[0], "EA"))

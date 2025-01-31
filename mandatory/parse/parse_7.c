@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 21:21:36 by akajjou           #+#    #+#             */
-/*   Updated: 2025/01/30 19:44:52 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:37:44 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,13 @@ void	skipper(char *line, int *c_index, int *end_index)
 	index = 0;
 	if (!line)
 		return ;
-	while (line[index] && line[index] == ' ')
+	while (line[index] && (line[index] == ' ' || line[index] == '\t'))
 	{
 		(*c_index)++;
 		index++;
 	}
-	while (line[index] && ft_isprint(line[index]) && line[index] != ' ')
+	while (line[index] && ft_isprint(line[index]) && line[index] != ' '
+		&& line[index] != '\t')
 		index++;
 	(*end_index) = index;
 }

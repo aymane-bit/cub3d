@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 21:21:25 by akajjou           #+#    #+#             */
-/*   Updated: 2025/01/30 19:45:17 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:33:35 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,12 @@ bool	texture_parse(t_data *data)
 	char	*textures[7];
 	int		i;
 
-	textures[0] = data->no;
-	textures[1] = data->so;
-	textures[2] = data->we;
-	textures[3] = data->ea;
-	textures[4] = data->f;
-	textures[5] = data->c;
+	textures[0] = ft_no_tab(data->no);
+	textures[1] = ft_no_tab(data->so);
+	textures[2] = ft_no_tab(data->we);
+	textures[3] = ft_no_tab(data->ea);
+	textures[4] = ft_no_tab(data->f);
+	textures[5] = ft_no_tab(data->c);
 	textures[6] = NULL;
 	i = 0;
 	while (textures[i])

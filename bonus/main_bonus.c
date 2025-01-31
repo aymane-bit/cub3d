@@ -6,11 +6,34 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 14:23:38 by nait-bou          #+#    #+#             */
-/*   Updated: 2025/01/30 19:45:52 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:34:05 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/cub3d_bonus.h"
+
+char	*ft_no_tab(char *str)
+{
+	int		i;
+	int		j;
+	char	*result;
+
+	if (!str)
+		return (NULL);
+	result = (char *)ft_malloc(sizeof(char) * (strlen(str) + 1));
+	i = 0;
+	j = 0;
+	while (str[i])
+	{
+		if (str[i] == '\t')
+			result[j++] = ' ';
+		else
+			result[j++] = str[i];
+		i++;
+	}
+	result[j] = '\0';
+	return (result);
+}
 
 int	main(int ac, char **av)
 {

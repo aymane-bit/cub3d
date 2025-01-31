@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 12:30:50 by nait-bou          #+#    #+#             */
-/*   Updated: 2025/01/30 19:53:42 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:38:56 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -202,5 +202,6 @@ void					draw_floor_ceiling(t_global *global, int ray,
 void					my_mlx_pixel_put(t_global *global, int x,
 							int y, int color);
 void					norm(t_global *global, double x);
+char					*ft_no_tab(char *str);
 
 #endif

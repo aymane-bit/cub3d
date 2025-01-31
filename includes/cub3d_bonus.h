@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 12:30:50 by nait-bou          #+#    #+#             */
-/*   Updated: 2025/01/30 19:54:31 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:02:48 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -205,5 +205,6 @@ void					my_mlx_pixel_put(t_global *global, int x,
 							int y, int color);
 void					norm(t_global *global, double x);
 t_allocation			**get_heap_garco(void);
+char					*ft_no_tab(char *str);
 
 #endif

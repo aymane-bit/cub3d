@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 21:18:13 by akajjou           #+#    #+#             */
-/*   Updated: 2025/01/30 19:45:17 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:13:47 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,8 +76,8 @@ bool	color_range_parse(t_data *data, char *floor_arg, char *ceiling_arg)
 
 	if (!floor_arg || !ceiling_arg)
 		return (false);
-	floor = ft_split(floor_arg, ' ');
-	ceiling = ft_split(ceiling_arg, ' ');
+	floor = ft_split(ft_no_tab(floor_arg), ' ');
+	ceiling = ft_split(ft_no_tab(ceiling_arg), ' ');
 	if (ft_arg_count(ceiling) != 2 || ft_arg_count(floor) != 2)
 		return (false);
 	if (in_range(floor[1]) == false || in_range(ceiling[1]) == false)

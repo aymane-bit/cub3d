@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 21:18:05 by akajjou           #+#    #+#             */
-/*   Updated: 2025/01/30 19:44:52 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:36:28 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ bool	line_char_check(char *line)
 		if (line[c_index] != '1' && line[c_index] != '0' && line[c_index] != ' '
 			&& line[c_index] != 'N' && line[c_index] != 'W'
 			&& line[c_index] != 'S'
-			&& line[c_index] != 'E')
+			&& line[c_index] != 'E'
+			&& line[c_index] != '\t')
 			return (false);
 		c_index++;
 	}
@@ -53,7 +54,8 @@ bool	all_one(char *line)
 	c_index = 0;
 	while (line[c_index])
 	{
-		if (line[c_index] != '1' && line[c_index] != ' ')
+		if (line[c_index] != '1' && line[c_index] != ' '
+			&& line[c_index] != '\t')
 			return (false);
 		c_index++;
 	}

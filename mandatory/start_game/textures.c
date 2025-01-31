@@ -6,7 +6,7 @@
 /*   By: akajjou <akajjou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/25 19:44:17 by nait-bou          #+#    #+#             */
-/*   Updated: 2025/01/30 19:44:52 by akajjou          ###   ########.fr       */
+/*   Updated: 2025/01/31 19:38:22 by akajjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_path_to_texture(char *str)
 	char	**texture;
 	char	*ret_texture;
 
-	texture = ft_split(str, ' ');
+	texture = ft_split(ft_no_tab(str), ' ');
 	ret_texture = ft_strdup(texture[1]);
 	return (ret_texture);
 }
